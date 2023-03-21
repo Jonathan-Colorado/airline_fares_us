@@ -18,5 +18,7 @@ At the moment, the plots derived from the dataset are as follows:
 - A look at fares and how trip distance affects them
 - A view of the top revenue generating routes, by year
 
-I used Jupyter Notebook to clean and fix the data, then plotted the charts in Streamlit. The final product is deployed on Render, and can be seen here:
+I used Jupyter Notebook to clean and fix the data, then plotted the charts in Streamlit. The final product is deployed on Render, and can be seen here: https://airline-fares-us.onrender.com/.
+
+
 
