@@ -25,7 +25,7 @@ def load_data(url):
     return dframe
 
 
-air_travel_df = load_data("..\\airline_fares_us\\us_airfares_processed.csv")
+air_travel_df = load_data("../airline_fares_us/us_airfares_processed.csv")
 
 #-----------------------------------------------------------------------------------------------------
 # Raw Dataframe 
