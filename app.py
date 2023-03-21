@@ -18,14 +18,14 @@ st.header('Data From USDoT Domestic Airline Consumer Airfare Report')
 
 # Load dataset
 # import the data
-@st.cache_data  # Add the caching decorator
-def load_data(url):
-    """Function reading .csv files."""
-    dframe = pd.read_csv(url, index_col=0)
-    return dframe
+# @st.cache_data  # Add the caching decorator
+# def load_data(url):
+#     """Function reading .csv files."""
+#     dframe = pd.read_csv(url, index_col=0)
+#     return dframe
 
 
-air_travel_df = load_data("../airline_fares_us/us_airfares_processed.csv")
+air_travel_df = pd.read_csv("./us_airfares_processed.csv")
 
 #-----------------------------------------------------------------------------------------------------
 # Raw Dataframe 
