@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=640px height=360px src="https://github.com/Jonathan-Colorado/airline_fares_us/blob/main/car-ads.jpg" alt="Project logo"></a>
+ <img width=640px height=360px src="https://github.com/Jonathan-Colorado/airline_fares_us/blob/main/assets/aircraft_landing.jpg" alt="Project logo"></a>
 </p>
 
 <h3 align="center">US Consumer Airfare Analysis</h3>
