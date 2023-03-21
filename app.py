@@ -25,18 +25,19 @@ def load_data(url):
     return dframe
 
 
-air_travel_df = load_data("D:\\Projects\\Github\\airline_fares_us\\us_airfares_processed.csv")
+air_travel_df = load_data("..\\airline_fares_us\\us_airfares_processed.csv")
 
 #-----------------------------------------------------------------------------------------------------
 # Raw Dataframe 
 
 st.subheader('Dataset Viewer')
-year_filter = st.selectbox('Select Year:', air_travel_df.year.unique(), index=0)  #Select the year
+year_list = air_travel_df.year.sort_values().unique()
+year_filter = st.selectbox('Select Year:', year_list, index=0)  #Select the year
 
 air_travel_df.sort_values(by=['year', 'quarter'], inplace=True)
 air_travel_df['year'] = air_travel_df['year'].astype(str) #can't get rid of thousands comma
 
-st.dataframe(air_travel_df[air_travel_df['year']==year_filter], use_container_width=True)
+st.dataframe(air_travel_df[air_travel_df['year']==year_filter.astype(str)], use_container_width=True)
 
 #-----------------------------------------------------------------------------------------------------
 # Histogram of Average Quarterly Passenger Volume per Route
